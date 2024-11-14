@@ -262,8 +262,11 @@ const VoiceRecorder: React.FC = () => {
           <h2 className="text-3xl mb-2" style={{ color: "darkblue" }}>Instrucciones</h2>
 
           <ul className="text-xl mt-4 text-darkblue" style={{ color: "darkblue" }}>
+           
+          <li className="flex items-start"><span className="w-6 flex-shrink-0"> 👤</span><span><strong>Cliente: 🔊 </strong></span></li>
             <li className="flex items-start">
-              <span className="w-6 flex-shrink-0">📄</span>
+              
+           <span className="w-6 flex-shrink-0">📄</span>
               <span><strong>Órden: 🔊 </strong></span>
             </li>
             <li className="flex items-start">
