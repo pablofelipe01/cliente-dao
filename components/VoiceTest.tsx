@@ -249,15 +249,48 @@ const VoiceTest: React.FC = () => {
           <i className="fas fa-microphone-alt text-6xl mb-2" style={{ color: "darkblue" }}></i>
           <h2 className="text-3xl mb-2" style={{ color: "darkblue" }}>Instrucciones</h2>
 
+          <p className="text-lg my-4" style={{ color: "darkblue" }}>
+            1. Al momento de iniciar la grabación, por favor mencione la palabra clave y, seguidamente, el dato correspondiente, según el orden de la lista de palabras clave.
+          </p>
+          <p className="text-lg my-4" style={{ color: "darkblue" }}>
+            2. Si se equivoca al realizar la grabación, por favor no la detenga. Solo debe actualizar la aplicación deslizando el dedo de arriba hacia abajo (en dispositivos móviles).
+          </p>
+          <p className="text-lg my-4" style={{ color: "darkblue" }}>
+            3. Si no tiene un dato para la palabra clave, mencione el número 0.
+          </p>
+
+          <h2 className="text-3xl mb-2" style={{ color: "darkblue" }}>Palabras clave</h2>
           <ul className="text-xl mt-4 text-darkblue" style={{ color: "darkblue" }}>
-            <li className="flex items-start"><span className="w-6 flex-shrink-0"> 👤</span><span><strong>Cliente: 🔊 </strong></span></li>
-            <li className="flex items-start"><span className="w-6 flex-shrink-0">🌡️</span><span><strong>Componentes polares: 🔊 </strong></span></li>
-            <li className="flex items-start"><span className="w-6 flex-shrink-0">🌞</span><span><strong>Temperatura: 🔊 </strong></span></li>
-            <li className="flex items-start"><span className="w-6 flex-shrink-0">♻️</span><span><strong>Refill: 🔊 </strong></span></li>
-            <li className="flex items-start"><span className="w-6 flex-shrink-0">🛢️</span><span><strong>Filtrado de aceite: 🔊 Si o No</strong></span></li>
-            <li className="flex items-start"><span className="w-6 flex-shrink-0">🍟</span><span><strong>Cantidad de freídos: 🔊 </strong></span></li>
-            <li className="flex items-start"><span className="w-6 flex-shrink-0">🗣️</span><span><strong>Observaciones: 🔊 </strong></span></li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">👤</span>
+              <span><strong>Cliente: 🔊 </strong></span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">🌡️</span>
+              <span><strong>Componentes polares: 🔊 </strong></span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">🌞</span>
+              <span><strong>Temperatura: 🔊 </strong></span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">♻️</span>
+              <span><strong>Refill: 🔊 </strong></span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">🛢️</span>
+              <span><strong>Filtrado de aceite: 🔊 Si o No</strong></span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">🍟</span>
+              <span><strong>Cantidad de freídos: 🔊 </strong></span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">🗣️</span>
+              <span><strong>Observaciones: 🔊 </strong></span>
+            </li>
           </ul>
+
 
           <button
             onClick={iniciarGrabacion}
