@@ -125,7 +125,7 @@ const VoiceRecorder: React.FC = () => {
     formData.append('file', audioBlob, `${nombreArchivo}.webm`);
 
     try {
-      const response = await fetch('https://tok-n8n-sol.onrender.com/webhook/9e580d71-241c-4579-afbb-0cf5782465fc', {
+      const response = await fetch('https://tok-n8n-sol.onrender.com/webhook-test/9e580d71-241c-4579-afbb-0cf5782465fc', {
         method: 'POST',
         body: formData,
       });
@@ -257,10 +257,19 @@ const VoiceRecorder: React.FC = () => {
         <canvas ref={canvasRef} width={300} height={80} className="w-full mb-4" />
         <div className="mb-6 flex flex-col space-y-4 items-center">
           
-
           <i className="fas fa-microphone-alt text-6xl mb-2" style={{ color: "darkblue" }}></i>
           <h2 className="text-3xl mb-2" style={{ color: "darkblue" }}>Instrucciones</h2>
+          <p className="text-lg my-4" style={{ color: "darkblue" }}>
+            1. Al momento de iniciar la grabación, por favor mencione la palabra clave y, seguidamente, el dato correspondiente, según el orden de la lista de palabras clave.
+          </p>
+          <p className="text-lg my-4" style={{ color: "darkblue" }}>
+            2. Si se equivoca al realizar la grabación, por favor no la detenga. Solo debe actualizar la aplicación deslizando el dedo de arriba hacia abajo (en dispositivos móviles).
+          </p>
+          <p className="text-lg my-4" style={{ color: "darkblue" }}>
+            3. Si no tiene un dato para la palabra clave, mencione el número 0.
+          </p>
 
+          <h2 className="text-3xl mb-2" style={{ color: "darkblue" }}>Palabras clave</h2>
           <ul className="text-xl mt-4 text-darkblue" style={{ color: "darkblue" }}>
            
           <li className="flex items-start"><span className="w-6 flex-shrink-0"> 👤</span><span><strong>Cliente: 🔊 </strong></span></li>
@@ -292,6 +301,10 @@ const VoiceRecorder: React.FC = () => {
             <li className="flex items-start">
               <span className="w-6 flex-shrink-0">💡</span>
               <span><strong>¿Cómo podemos mejorar nuestros servicios? 🔊 </strong></span>
+            </li>
+            <li className="flex items-start">
+              <span className="w-6 flex-shrink-0">⭐</span>
+              <span><strong>De 1 a 10, ¿Que calificacion le daria al servicio obtenido por Del Llano Alto Oleico?: 🔊 </strong>(Mecionar un numero del 1 al 10)</span>
             </li>
           </ul>
 
